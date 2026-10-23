@@ -8,7 +8,7 @@
         <!-- Logo -->
         <div class="flex items-center gap-2">
           <router-link to="/" class="focus:outline-none">
-            <img src="/files/homelogoe.jpg" alt="Logo" class="h-[60px] object-contain" />
+            <img src="/files/homelogoe.jpg" alt="Logo" class="h-[35px] object-contain" />
             <!-- <img src="/files/ChatGPT Image Jun 18, 2026, 03_25_18 PM.png" alt="Logo" class="h-[60px] object-contain" /> -->
           </router-link>
         </div>
@@ -116,7 +116,7 @@
         </div>
 
         <!-- Mobile Menu Button -->
-        <div class="lg:hidden ml-auto">
+<!--        <div class="lg:hidden ml-auto">
 
           <button @click="toggleMenu">
 
@@ -131,7 +131,7 @@
 
           </button>
 
-        </div>
+        </div> -->
 
       </nav>
 
