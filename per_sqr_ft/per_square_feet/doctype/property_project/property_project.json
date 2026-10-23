@@ -1,0 +1,288 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:url",
+ "creation": "2026-05-27 14:58:10.695200",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "project_details_section",
+  "project_name",
+  "heading_project_location",
+  "status",
+  "project_location_map_embed",
+  "project_area_heading",
+  "project_area",
+  "project_by_builder",
+  "super_built_up_area",
+  "project_type",
+  "order_by",
+  "column_break_mczd",
+  "url",
+  "short_description",
+  "full_location",
+  "description_heading",
+  "description",
+  "thumbnail_image",
+  "is_active",
+  "youtube_link",
+  "master_plan_images",
+  "price",
+  "units",
+  "project_related_images_section",
+  "carousel_images",
+  "gallery_images",
+  "project_gallery_image_section",
+  "per_square_feet_gallery",
+  "section_break_rwwq",
+  "property_details",
+  "property_unit_table_section",
+  "property_unit",
+  "section_break_parl",
+  "property_amenities",
+  "section_break_hsvk",
+  "master_plan",
+  "section_break_fxoc",
+  "property_specifications"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_details_section",
+   "fieldtype": "Section Break",
+   "label": "Project Details"
+  },
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
+  },
+  {
+   "fieldname": "heading_project_location",
+   "fieldtype": "Data",
+   "label": "Heading Project Location"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Completed\nOngoing\nUpcoming\nSold Out"
+  },
+  {
+   "fieldname": "project_location_map_embed",
+   "fieldtype": "Text",
+   "label": "Project Location (Map Embed)"
+  },
+  {
+   "fieldname": "project_area_heading",
+   "fieldtype": "Data",
+   "label": "Project Area Heading"
+  },
+  {
+   "fieldname": "project_area",
+   "fieldtype": "Data",
+   "label": "Project Area"
+  },
+  {
+   "fieldname": "project_by_builder",
+   "fieldtype": "Data",
+   "label": "Project By (Builder)"
+  },
+  {
+   "fieldname": "super_built_up_area",
+   "fieldtype": "Data",
+   "label": "Super Built Up Area"
+  },
+  {
+   "fieldname": "project_type",
+   "fieldtype": "Link",
+   "label": "Property Type",
+   "options": "Property Type"
+  },
+  {
+   "fieldname": "order_by",
+   "fieldtype": "Data",
+   "label": "Order By"
+  },
+  {
+   "fieldname": "column_break_mczd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "url",
+   "fieldtype": "Data",
+   "label": "Url",
+   "unique": 1
+  },
+  {
+   "fieldname": "full_location",
+   "fieldtype": "Data",
+   "label": "Full Location"
+  },
+  {
+   "fieldname": "description_heading",
+   "fieldtype": "Data",
+   "label": "Description Heading"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "thumbnail_image",
+   "fieldtype": "Attach Image",
+   "label": "Thumbnail Image"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  },
+  {
+   "fieldname": "project_related_images_section",
+   "fieldtype": "Section Break",
+   "label": "Project Related Images"
+  },
+  {
+   "fieldname": "carousel_images",
+   "fieldtype": "Table",
+   "label": "Carousel Images",
+   "options": "Carousel Images"
+  },
+  {
+   "fieldname": "gallery_images",
+   "fieldtype": "Table",
+   "label": "Gallery Images",
+   "options": "Per Square Feet project images"
+  },
+  {
+   "fieldname": "project_gallery_image_section",
+   "fieldtype": "Section Break",
+   "label": "Project Gallery Image"
+  },
+  {
+   "fieldname": "per_square_feet_gallery",
+   "fieldtype": "Table",
+   "label": "Per Square feet Gallery",
+   "options": "Per Square feet Gallery"
+  },
+  {
+   "fieldname": "section_break_rwwq",
+   "fieldtype": "Section Break",
+   "label": "Property Details table"
+  },
+  {
+   "fieldname": "property_details",
+   "fieldtype": "Table",
+   "label": "Property Details",
+   "options": "Property Details"
+  },
+  {
+   "fieldname": "property_unit_table_section",
+   "fieldtype": "Section Break",
+   "label": "Property Unit table"
+  },
+  {
+   "fieldname": "property_unit",
+   "fieldtype": "Table",
+   "label": "Property Unit",
+   "options": "Property Unit"
+  },
+  {
+   "fieldname": "youtube_link",
+   "fieldtype": "Data",
+   "label": "Youtube LInk"
+  },
+  {
+   "fieldname": "master_plan_images",
+   "fieldtype": "Attach Image",
+   "label": "Master_plan_images"
+  },
+  {
+   "fieldname": "section_break_parl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "property_amenities",
+   "fieldtype": "Table",
+   "label": "Property Amenities",
+   "options": "Property Amenities"
+  },
+  {
+   "fieldname": "short_description",
+   "fieldtype": "Data",
+   "label": "Short_descrption"
+  },
+  {
+   "fieldname": "section_break_hsvk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "master_plan",
+   "fieldtype": "Table",
+   "label": "Master Plan",
+   "options": "Master Plan Images"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Data",
+   "label": "price"
+  },
+  {
+   "fieldname": "units",
+   "fieldtype": "Data",
+   "label": "Units"
+  },
+  {
+   "fieldname": "section_break_fxoc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "property_specifications",
+   "fieldtype": "Table",
+   "label": "Property Specifications",
+   "options": "Property Specification"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-06-16 17:32:10.374792",
+ "modified_by": "Administrator",
+ "module": "Per Square Feet",
+ "name": "Property Project",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

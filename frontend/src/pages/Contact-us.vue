@@ -1,0 +1,393 @@
+<template>
+
+  <!-- <section class="relative h-[280px] sm:h-[450px] overflow-hidden"> -->
+  <!-- Banner Section -->
+
+  <section class="mb-0 md:mb-4">
+    <img src="/files/newContactBanne.jpeg" alt="Contact Us"
+      class="w-full h-auto md:h-[450px] object-contain md:object-cover" />
+
+  </section>
+
+
+
+
+
+
+  <section class="mb-14 ">
+    <div class="pt-12 max-w-6xl mx-auto px-2 sm:px-6 lg:px-8">
+
+      <!-- Main Section -->
+      <div class="grid lg:grid-cols-2 gap-10">
+
+        <!-- Left Image -->
+        <div
+          class="bg-gradient-to-r from-[#FFF3E6] via-[#F8E7C1] to-[#FFF8F0] p-6 rounded-[30px] shadow-[50px]   grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+          <!-- Address -->
+          <div
+            class="bg-white rounded-lg p-2 shadow-md hover:shadow-xl transition flex flex-col items-center justify-center text-center">
+            <div class="w-16 h-16 mx-auto rounded-xl bg-orange-50 flex items-center justify-center mb-5">
+              <span class="material-symbols-outlined text-orange-500 text-3xl">
+                location_on
+              </span>
+            </div>
+
+            <h3 class="text-xl font-semibold text-[#2f2f68] mb-2">
+              Address
+            </h3>
+
+            <p class="text-black font-semibold">
+              Bangalore, Karnataka, India
+            </p>
+          </div>
+
+          <!-- Contact -->
+          <div
+            class="bg-white rounded-lg p-2 shadow-md hover:shadow-xl transition flex flex-col items-center justify-center text-center">
+            <div class="w-16 h-16 mx-auto rounded-xl bg-cyan-50 flex items-center justify-center mb-5">
+              <span class="material-symbols-outlined text-cyan-600 text-3xl">
+                call
+              </span>
+            </div>
+
+            <h3 class="text-xl font-semibold text-[#2f2f68] mb-2">
+              Contact
+            </h3>
+
+            <p class="text-black font-semibold">
+              +91 9972685253
+            </p>
+            <p class="text-black font-semibold">
+              +91 9686872201
+            </p>
+          </div>
+
+          <!-- Email -->
+          <div
+            class="bg-white rounded-lg p-2 shadow-md hover:shadow-xl transition flex flex-col items-center justify-center text-center">
+            <div class="w-16 h-16 mx-auto rounded-xl bg-green-50 flex items-center justify-center mb-5">
+              <span class="material-symbols-outlined text-green-600 text-3xl">
+                mail
+              </span>
+            </div>
+
+            <h3 class="text-xl font-semibold text-[#2f2f68] mb-2">
+              Email
+            </h3>
+
+            <p class="text-black font-semibold break-all">
+              2287kkr@gmail.com
+            </p>
+          </div>
+
+          <!-- Map -->
+          <div
+            class="bg-white rounded-lg p-2 shadow-md hover:shadow-xl transition flex flex-col items-center justify-center text-center">
+
+            <div class="w-16 h-16 rounded-xl bg-pink-50 flex items-center justify-center mb-5">
+              <span class="material-symbols-outlined text-pink-600 text-3xl">
+                map
+              </span>
+            </div>
+
+            <h3 class="text-xl font-semibold text-[#2f2f68] mb-2">
+              Google Map
+            </h3>
+
+            <a href="https://maps.app.goo.gl/Gxjg83C6gciWH16y6" target="_blank"
+              class="text-indigo-600 hover:text-indigo-700">
+              View Location
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- Right Form -->
+        <!-- Right Side Form -->
+        <div class="bg-gradient-to-r from-[#FFF3E6] via-[#F8E7C1] to-[#FFF8F0] rounded-[30px] shadow-xl p-6 sm:p-6">
+
+          <h2 class="text-4xl font-bold text-[#2f2f68] mb-2">
+            Send us a message
+          </h2>
+
+          <p class="text-gray-500 text-lg leading-6 mb-6">
+            Your satisfaction is our top priority, and we are committed to
+            providing exceptional service and support.
+          </p>
+
+          <form @submit.prevent="submitForm" class="space-y-3">
+
+            <!-- Name -->
+            <div>
+              <label class="block text-gray-700 font-medium mb-2">
+                Your Name <span class="text-red-500">*</span>
+              </label>
+
+              <input v-model="form.name" type="text" placeholder="Enter your name"
+                class="w-full h-10 px-5 border border-gray-300 rounded-xl outline-none focus:border-[#0B1560]"
+                required />
+            </div>
+
+            <!-- Email -->
+            <div>
+              <label class="block text-gray-700 font-medium mb-2">
+                Email Address <span class="text-red-500">*</span>
+              </label>
+
+              <input v-model="form.email" type="email" placeholder="Enter your email"
+                class="w-full h-10 px-5 border border-gray-300 rounded-xl outline-none focus:border-[#0B1560]"
+                required />
+            </div>
+
+            <!-- Phone -->
+            <div>
+              <label class="block text-gray-700 font-medium mb-2">
+                Phone Number <span class="text-red-500">*</span>
+              </label>
+
+              <input v-model="form.phone" type="text" placeholder="Enter your phone number"
+                class="w-full h-10 px-5 border border-gray-300 rounded-xl outline-none focus:border-[#0B1560]"
+                required />
+            </div>
+
+            <!-- Service -->
+            <div>
+              <label class="block text-gray-700 font-medium mb-2">
+                Select Service
+              </label>
+
+              <select v-model="form.services"
+                class="w-full h-10 px-5 border border-gray-300 rounded-xl outline-none focus:border-[#0B1560]">
+                <option value="Others Services">Others Services</option>
+                <option value="Real Estate Consultation">Real Estate Consultation</option>
+                <option value="Housing Loan Services">Housing Loan Services</option>
+                <option value="Interior Design Services">Interior Design Services</option>
+                <option value="Legal Consultation">Legal Consultation</option>
+                <option value="Property Management">Property Management</option>
+                <option value="Construction Services">Construction Services</option>
+              </select>
+            </div>
+
+            <!-- Message -->
+            <!-- <div>
+              <label class="block text-gray-700 font-medium mb-2">
+                Message
+              </label>
+
+              <textarea rows="5" placeholder="Write your message..."
+                class="w-full border border-gray-300 rounded-xl px-5 py-4 outline-none focus:border-[#0B1560]"></textarea>
+            </div> -->
+
+            <!-- Submit -->
+            <button type="submit"
+              class="w-full h-10 bg-[#0B1560] hover:bg-[#16248f] text-white rounded-xl font-semibold transition">
+              Send Message
+            </button>
+
+          </form>
+
+          <!-- Success -->
+          <p v-if="successMessage" class="mt-4 text-green-600 text-center font-medium">
+            Your message has been submitted successfully.
+          </p>
+
+          <!-- Error -->
+          <p v-if="errorMessage" class="mt-4 text-red-600 text-center font-medium">
+            {{ errorText }}
+          </p>
+
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- Map Section -->
+  <section class="px-4  sm:px-6 lg:px-10 pb-6">
+
+    <div class="max-w-7xl mx-auto">
+
+      <div class="rounded-[30px] overflow-hidden shadow-lg">
+
+        <iframe src="https://www.google.com/maps?q=Quantumberg+Technologies+Bangalore&output=embed" width="100%"
+          height="450" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</template>
+
+
+<script setup>
+
+
+
+import { reactive, ref } from "vue";
+
+const successMessage = ref(false);
+const errorMessage = ref(false);
+const errorText = ref("");
+
+const form = reactive({
+  name: "",
+  email: "",
+  phone: "",
+  services: "Others Services",
+});
+
+
+const submitForm = async () => {
+
+  // Name Validation
+  if (!form.name.trim()) {
+    errorText.value = "Name is required";
+    errorMessage.value = true;
+
+    setTimeout(() => {
+      errorMessage.value = false;
+    }, 4000);
+
+    return;
+  }
+
+  // Email Required
+  if (!form.email.trim()) {
+    errorText.value = "Email is required";
+    errorMessage.value = true;
+
+    setTimeout(() => {
+      errorMessage.value = false;
+    }, 4000);
+
+    return;
+  }
+
+  // Email Format Validation
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) {
+    errorText.value = "Please enter a valid email address";
+    errorMessage.value = true;
+
+    setTimeout(() => {
+      errorMessage.value = false;
+    }, 4000);
+
+    return;
+  }
+
+  // Phone Required
+  if (!form.phone.trim()) {
+    errorText.value = "Phone number is required";
+    errorMessage.value = true;
+
+    setTimeout(() => {
+      errorMessage.value = false;
+    }, 4000);
+
+    return;
+  }
+
+  // Phone Validation
+  if (!/^\d{10}$/.test(form.phone)) {
+    errorText.value = "Phone number must contain exactly 10 digits";
+    errorMessage.value = true;
+
+    setTimeout(() => {
+      errorMessage.value = false;
+    }, 4000);
+
+    return;
+  }
+
+  try {
+
+    const response = await fetch(
+      "/api/method/per_sqr_ft.api.lead.add_lead",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          phone: form.phone,
+          services: form.services
+        }),
+      }
+    );
+
+    const data = await response.json();
+    console.log(data);
+
+    // Duplicate Email / Phone
+    // if (data.exc) {
+    //   errorText.value = "Email or Phone already exists";
+    //   errorMessage.value = true;
+
+    //   setTimeout(() => {
+    //     errorMessage.value = false;
+    //   }, 4000);
+
+    //   return;
+    // }
+    if (data.exc) {
+
+      const messages = JSON.parse(data._server_messages);
+      const error = JSON.parse(messages[0]);
+
+      errorText.value = error.message;
+      errorMessage.value = true;
+
+      setTimeout(() => {
+        errorMessage.value = false;
+      }, 4000);
+
+      return;
+    }
+
+    // Success
+    if (data.message === "Lead added successfully") {
+
+      successMessage.value = true;
+
+      setTimeout(() => {
+        successMessage.value = false;
+      }, 4000);
+
+      form.name = "";
+      form.email = "";
+      form.phone = "";
+      form.services = "Others Services";
+    }
+
+  } catch (error) {
+
+    console.error(error);
+
+    errorText.value = "Something went wrong";
+    errorMessage.value = true;
+
+    setTimeout(() => {
+      errorMessage.value = false;
+    }, 4000);
+  }
+};
+
+</script>

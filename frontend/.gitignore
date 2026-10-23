@@ -1,0 +1,29 @@
+node_modules
+.DS_Store
+dist
+dist-ssr
+*.local
+
+# Frappe backups
+backup/
+**/backup/
+*.sql.gz
+*.tar
+*.tar.gz
+
+# Frontend dependencies
+node_modules/
+**/node_modules/
+
+# Python generated files
+__pycache__/
+*.py[cod]
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Build output
+dist/
+build/
